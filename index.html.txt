@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Falleiro Brigadeiria</title>
+  <meta name="description" content="Falleiro Brigadeiria — doces artesanais e brigadeiros gourmet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#E08E9B; /* rosa médio */
+      --accent-light:#FADADD; /* rosa claro */
+      --dark:#5C4033; /* marrom chocolate */
+      --light:#fff;
+      --muted:#666;
+      --bg:#FFF3E2; /* bege cremoso */
+      --gold:#D4AF37; /* dourado suave */
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--dark);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    header{position:fixed;top:0;left:0;width:100%;background:var(--light);box-shadow:0 2px 10px rgba(0,0,0,0.05);z-index:100}
+    .nav{max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
+    .nav .logo{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--accent)}
+    .nav ul{list-style:none;display:flex;gap:24px}
+    .nav ul li a{font-weight:600;color:var(--dark);transition:.3s}
+    .nav ul li a:hover{color:var(--accent)}
+
+    .hero{height:90vh;background:url('https://images.unsplash.com/photo-1589927986089-35812388d1a0?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--light);padding:0 20px;position:relative}
+    .hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(92,64,51,0.35)}
+    .hero div{position:relative;z-index:2}
+    .hero h1{font-family:'Playfair Display',serif;font-size:48px;margin-bottom:16px;text-shadow:0 2px 8px rgba(0,0,0,0.4)}
+    .hero p{font-size:18px;margin-bottom:24px;text-shadow:0 2px 6px rgba(0,0,0,0.5)}
+    .hero a{background:var(--accent);padding:14px 26px;border-radius:30px;font-weight:700;color:var(--light);transition:.3s}
+    .hero a:hover{background:var(--gold);color:var(--dark)}
+
+    section{max-width:1200px;margin:80px auto;padding:0 24px}
+    h2{font-family:'Playfair Display',serif;font-size:32px;margin-bottom:24px;color:var(--accent)}
+
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+    .product{background:var(--light);border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:transform .3s,border .3s}
+    .product:hover{transform:translateY(-6px);border:2px solid var(--accent-light)}
+    .product img{height:200px;object-fit:cover}
+    .product-info{padding:16px}
+    .product-info h3{font-size:18px;margin-bottom:6px;color:var(--dark)}
+    .price{font-weight:700;color:var(--gold)}
+
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .about img{border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.1)}
+    .about p{color:var(--dark)}
+
+    footer{background:var(--dark);color:var(--light);padding:40px 20px;text-align:center;margin-top:80px}
+    footer p{color:var(--accent-light);font-size:14px;margin-top:8px}
+
+    @media(max-width:900px){
+      .about{grid-template-columns:1fr}
+      .hero h1{font-size:36px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">Falleiro Brigadeiria</div>
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Brigadeiros gourmet inesquecíveis</h1>
+      <p>Doces artesanais para festas, eventos e momentos especiais.</p>
+      <a href="#produtos">Conheça nossos sabores</a>
+    </div>
+  </section>
+
+  <section id="produtos">
+    <h2>Nossos Produtos</h2>
+    <div class="products">
+      <div class="product">
+v        <div class="product-info">
+          <h3>Brigadeiro Tradicional</h3>
+          <div class="price">R$ 3,50</div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1603133872877-68b3d6b6f8b4?auto=format&fit=crop&w=600&q=60" alt="Beijinho">
+        <div class="product-info">
+          <h3>Beijinho</h3>
+          <div class="price">R$ 3,50</div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1612392061788-8b6a7a4a2f1d?auto=format&fit=crop&w=600&q=60" alt="Prestígio">
+        <div class="product-info">
+          <h3>Prestígio</h3>
+          <div class="price">R$ 4,00</div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1606756792568-1b9a2f0c8f9a?auto=format&fit=crop&w=600&q=60" alt="Churros">
+        <div class="product-info">
+          <h3>Churros</h3>
+          <div class="price">R$ 4,50</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="sobre">
+    <div>
+      <h2>Sobre Nós</h2>
+      <p>A <strong>Falleiro Brigadeiria</strong> nasceu da paixão por doces feitos com carinho e ingredientes selecionados. Oferecemos brigadeiros artesanais em diversos sabores, perfeitos para festas, casamentos, eventos corporativos e para adoçar o dia a dia.</p>
+    </div>
+    <div>
+      <img 
+      src=" alt="Brigadeiros artesanais">
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Faça sua encomenda pelo WhatsApp ou email.</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a></p>
+    <p><strong>Email:</strong> contato@falleirobrigadeiria.com.br</p>
+  </section>
+
+  <footer>
+    <div>
+      <strong>Falleiro Brigadeiria</strong>
+      <p>© 2025 Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>
